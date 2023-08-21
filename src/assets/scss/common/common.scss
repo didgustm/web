@@ -1,0 +1,52 @@
+@use "./variables" as vars;
+@import "./fonts";
+@import "./reset";
+@import "./class";
+
+html,
+body{
+    font-family: "mont", "pre";
+    font-size: 16px;
+    line-height: 1;
+    @include vars.fontWeight(400);
+    color: #272727;
+    letter-spacing: -.04em;
+    word-break: keep-all;
+    touch-action: manipulation;
+    overflow-x: hidden
+}
+.forbid-scroll{
+    height: 100vh;
+    overflow: hidden
+}
+.inner{
+    max-width: 1600px;
+    margin: 0 auto
+}
+
+main{
+    section{
+        position:relative
+    }
+    .inner{
+        padding:0 150px;
+        @include vars.custom(1500px){
+            padding:0 6.6vw
+        }
+    }
+}
+
+.txt-up{
+    overflow:hidden;
+     > *{
+        transform:translateY(100%);
+        @include vars.transitionDefault(transform, 1s)
+    }
+}
+
+// delay
+@for $i from 1 through 20{
+    *[class*=--#{$i}]{
+        transition-delay:#{$i*0.1}s
+    }
+}

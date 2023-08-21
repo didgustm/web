@@ -1,0 +1,14 @@
+.blind{
+    font-size:0;
+    line-height:0;
+    text-indent:-999px
+}
+.light{
+    @include vars.fontWeight(300)
+}
+.medium{
+    @include vars.fontWeight(500)
+}
+.bold{
+    @include vars.fontWeight(700)
+}

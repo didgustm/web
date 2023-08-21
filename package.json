@@ -1,0 +1,27 @@
+{
+    "name": "web",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "homepage": "https://didgustm.github.io/web/",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "predeploy": "yarn build",
+        "deploy": "gh-pages -d dist"
+    },
+    "devDependencies": {
+        "@sveltejs/vite-plugin-svelte": "^2.4.2",
+        "gh-pages": "^6.0.0",
+        "sass": "^1.66.1",
+        "svelte": "^4.0.5",
+        "svelte-preprocess": "^5.0.4",
+        "vite": "^4.4.5"
+    },
+    "dependencies": {
+        "@studio-freight/lenis": "^1.0.19",
+        "gsap": "^3.12.2",
+        "swiper": "^10.2.0"
+    }
+}
