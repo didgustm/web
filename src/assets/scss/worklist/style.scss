@@ -1,0 +1,16 @@
+@use '@scss/common/variables' as vars;
+
+.worklist{
+    .top{
+        padding:{
+            top:150px;
+            bottom:150px
+        }
+        background:#c6c6c6;
+        .title{
+            font-size:60px;
+            text-align:center;
+            @include vars.fontWeight(750)
+        }
+    }
+}

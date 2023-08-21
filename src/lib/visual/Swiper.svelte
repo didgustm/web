@@ -1,7 +1,6 @@
 <script>
     import { onMount } from "svelte"
-    import { register } from "swiper/element"
-    import { Pagination, Autoplay, EffectFade } from "swiper/modules"
+    import { register } from "swiper/element/bundle"
     import Item from "./Item.svelte"
 
     export let visuals;
@@ -10,13 +9,12 @@
 
     let swiperEl,
     params = {
-        modules: [Pagination, Autoplay, EffectFade],
         effect: "fade",
         speed: 800,
         loop: true,
         autoplay: {
             delay: 2800,
-            disableOnInteraction: false
+            disableOnInteraction: true
         },
         pagination: {
             bulletActiveClass: "active",

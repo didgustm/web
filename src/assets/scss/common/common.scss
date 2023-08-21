@@ -12,8 +12,7 @@ body{
     color: #272727;
     letter-spacing: -.04em;
     word-break: keep-all;
-    touch-action: manipulation;
-    overflow-x: hidden
+    touch-action: manipulation
 }
 .forbid-scroll{
     height: 100vh;
@@ -26,7 +25,8 @@ body{
 
 main{
     section{
-        position:relative
+        position:relative;
+        overflow:hidden
     }
     .inner{
         padding:0 150px;

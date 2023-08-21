@@ -5,7 +5,7 @@
     export let visual
 </script>
 
-<swiper-slide>
+<swiper-slide key={visual.id}>
     <div class="item {`item${visual.id}`}">
         <div class="bg"></div>
         <div class="content">
