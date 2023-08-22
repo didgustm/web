@@ -14,15 +14,10 @@ body{
     word-break: keep-all;
     touch-action: manipulation
 }
-.forbid-scroll{
-    height: 100vh;
-    overflow: hidden
-}
 
 main{
     section{
-        position:relative;
-        overflow:hidden
+        position:relative
     }
     .inner{
         // padding:0 150px;

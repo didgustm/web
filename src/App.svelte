@@ -15,15 +15,19 @@
         lenis.raf(time)
         requestAnimationFrame(raf)
     }
-    requestAnimationFrame(raf)
+    requestAnimationFrame(raf);
+
+    function layout(){
+        setLayout();
+        setBoxGrid(items, 0)
+    }
 </script>
 
 <svelte:window
-    on:load={ () => {
-        //w = document.documentElement.clientWidth;
-        setLayout();
-        setBoxGrid(items, 0)
-    } }
+    bind:innerWidth={w}
+    on:load={layout}
+    on:resize={layout}
+    
 />
 <main>
     <Visual />

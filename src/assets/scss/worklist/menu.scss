@@ -1,0 +1,15 @@
+.menus{
+    @include vars.flex(center);
+    position:sticky;
+    top:0;
+    left:0;
+    right:0;
+    background:#f0f0f0;
+    padding:20px 30px;
+    z-index:10;
+    box-shadow:0 5px 10px rgba(0,0,0,.15);
+    overflow:hidden;
+    button{
+        margin:0 50px
+    }
+}
