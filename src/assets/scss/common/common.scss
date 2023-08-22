@@ -18,10 +18,6 @@ body{
     height: 100vh;
     overflow: hidden
 }
-.inner{
-    max-width: 1600px;
-    margin: 0 auto
-}
 
 main{
     section{
@@ -29,10 +25,15 @@ main{
         overflow:hidden
     }
     .inner{
-        padding:0 150px;
-        @include vars.custom(1500px){
-            padding:0 6.6vw
-        }
+        // padding:0 150px;
+        // @include vars.custom(1500px){
+        //     padding:0 6.6vw
+        // }
+    }
+    .title{
+        font-size:60px;
+        line-height:1;
+        @include vars.fontWeight(750)
     }
 }
 

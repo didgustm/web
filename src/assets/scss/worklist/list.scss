@@ -1,0 +1,24 @@
+.list{
+    position:relative;
+    width:1300px;
+    margin:100px auto;
+    .box{
+        position:absolute;
+        height:350px;
+        padding:25px
+    }
+    button{
+        position:relative;
+        @include vars.wide();
+        background:#7d7d7d;
+        border-radius:10px;
+        overflow:hidden;
+        box-shadow:5px 5px 8px rgba(0,0,0,.23)
+    }
+    .thumnail{
+        @include vars.wide()
+    }
+    
+    @import "./card.scss";
+    
+}

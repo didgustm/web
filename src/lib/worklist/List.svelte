@@ -1,11 +1,11 @@
 <script>
-    import "@scss/worklist/style.scss"
+    import Box from "./Box.svelte"
+
+    export let sites, items
 </script>
 
-<section class="worklist">
-    <div class="top inner">
-        <h2 class="title">
-            Work List
-        </h2>
-    </div>
-</section>
+<div class="list">
+    { #each sites as site }
+    <Box { site } { items } />
+    { /each }
+</div>

@@ -1,0 +1,22 @@
+.card{
+    @include vars.flex(center, center);
+    @include vars.wide(abs);
+    color:#fff;
+    background:rgba(0,0,0,.7);
+    transform:translateX(101%)
+}
+.name{
+    font-size:24px
+}
+.category{
+    display:inline-block;
+    padding:10px 30px;
+    border-radius:20px;
+    @include vars.border(#fff);
+    margin:0 auto 15px
+}
+.icon{
+    position:absolute;
+    right:20px;
+    bottom:25px
+}
