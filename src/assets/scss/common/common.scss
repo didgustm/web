@@ -19,12 +19,6 @@ main{
     section{
         position:relative
     }
-    .inner{
-        // padding:0 150px;
-        // @include vars.custom(1500px){
-        //     padding:0 6.6vw
-        // }
-    }
     .title{
         font-size:60px;
         line-height:1;
@@ -41,8 +35,8 @@ main{
 }
 
 // delay
-@for $i from 1 through 20{
-    *[class*=--#{$i}]{
-        transition-delay:#{$i*0.1}s
-    }
-}
+// @for $i from 1 through 20{
+//     *[class*=--#{$i}]{
+//         transition-delay:#{$i*0.1}s
+//     }
+// }

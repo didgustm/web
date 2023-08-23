@@ -1,33 +1,46 @@
+/*
+ *  1: Life
+ *  2: Car
+ *  3: Stock
+ *  4: IT/WEB
+ *  5: Etc
+ */
+
 const sites = [
     {
         id: 1,
         title: "Life Site",
-        category: "LIFE",
-        url: "www.ababc.com"
+        category: 1,
+        url: "www.ababc.com",
+        device: "PC, Mobile"
     },
     {
         id: 2,
         title: "Car Site",
-        category: "CAR",
-        url: "www.car.com"
+        category: 2,
+        url: "www.car.com",
+        device: "PC, Mobile"
     },
     {
         id: 3,
         title: "Web Site",
-        category: "IT/WEB",
-        url: "www.itwebcom"
+        category: 3,
+        url: "www.itwebcom",
+        device: "Responsive"
     },
     {
         id: 4,
         title: "Stock Site",
-        category: "STOCK",
-        url: "www.stock.com"
+        category: 4,
+        url: "www.stock.com",
+        device: "PC, Mobile"
     },
     {
         id: 5,
         title: "Code",
-        category: "CODE",
-        url: "https://github.com/yanghyunyangha/calendar"
+        category: 5,
+        url: "https://github.com/yanghyunyangha/calendar",
+        device: "Mobile only"
     }
 ]
 

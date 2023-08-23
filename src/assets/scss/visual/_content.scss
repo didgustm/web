@@ -26,6 +26,7 @@
     transform:translateY(50px);
     opacity:0;
     @include vars.transitionDefault((transform, opacity), 1s);
+    transition-delay:0.2s;
     .clip{
         position:absolute;
         left:15px;

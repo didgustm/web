@@ -5,10 +5,12 @@
     import { setLayout } from "@js/setLayout"
     import { setBoxGrid } from "@js/setBoxGrid"
     import Visual from "./lib/visual/Visual.svelte"
-    import Worklist from "./lib/worklist/Worklist.svelte";
+    import Worklist from "./lib/worklist/Worklist.svelte"
+    import Detail from "./lib/detail/Detail.svelte";
 
-    let w,
-        items = [];
+    let deviceWidth, items = [], beforeItems = [], afterItems = [], newItems = [],
+        detailItem, visible = false;
+    $: sort = 0;
 
     const lenis = new Lenis();
     function raf(time){
@@ -21,18 +23,43 @@
         setLayout();
         setBoxGrid(items, 0)
     }
+
+    function sortBox(i){
+        if(sort != i){
+            sort = i;
+            newItems = items;
+            beforeItems = items.filter(ele => ele.dataset.sort == sort);
+            afterItems = items.filter(ele => ele.dataset.sort != sort);
+            newItems = beforeItems.concat(afterItems);
+            setBoxGrid(newItems, 0.4)
+        }
+    }
+
+    function detailShow(item){
+        detailItem = item;
+        visible = true;
+        lenis.stop()
+    }
+
+    function detailHide(){
+        visible = false;
+        lenis.start()
+    }
+
 </script>
 
 <svelte:window
-    bind:innerWidth={w}
+    bind:innerWidth={deviceWidth}
     on:load={layout}
     on:resize={layout}
-    
 />
 <main>
     <Visual />
-    <Worklist { Saos } { sites } { items } />
+    <Worklist { Saos } { sites } { items } { sortBox } { detailShow } />
 </main>
+{ #if visible }
+<Detail { detailItem } { detailHide } />
+{ /if }
 
 <style>
 @keyframes -global-from-bottom{

@@ -11,7 +11,7 @@
             <p class="category">{visual.category}</p>
         </div>
     </div>
-    <a href="{visual.url}" target="_blank" class="medium more --2">
+    <a href="{visual.url}" target="_blank" class="medium more">
         View Site
         <span class="clip">View Site</span>
         <span class="circle"></span>

@@ -1,0 +1,76 @@
+@use "@scss/common/variables" as vars;
+
+.detail{
+    @include vars.wide(abs);
+    position:fixed;
+    background:#fff;
+    overflow:auto;
+    z-index:99;
+    .inner{
+        @include vars.flex(space-between, stretch);
+        max-width:1400px;
+        padding:40px 20px;
+        margin:0 auto
+    }
+
+    .top{
+        @include vars.flex(space-between)
+    }
+    .title{
+        @include vars.flex(center, center);
+        max-width:calc(100% - 50px);
+        word-break:break-all;
+        @include vars.fontWeight(600);
+        font-size:28px
+    }
+    .utils{
+        @include vars.flex(center, center);
+        img{
+            pointer-events:none
+        }
+        .link{
+            width:40px
+        }
+        .close{
+            width:28px
+        }
+    }
+
+    .img{
+        width:70%;
+        text-align:center
+    }
+
+    .txt{
+        position:relative;
+        width:27%
+    }
+
+    .contents{
+        position:sticky;
+        top:40px;
+        right:0;
+        .info{
+            padding-top:50px
+        }
+        dl{
+            @include vars.flex(flex-start, center);
+            margin-top:15px;
+            line-height:1.4
+        }
+        dt{
+            width:40%;
+            font-size:20px
+        }
+        dd{
+            @include vars.ellipsis(60%);
+            font-size:14px;
+            color:#878787;
+            padding-left:20px;
+            a{
+                text-decoration:underline;
+                line-height:1.3
+            }
+        }
+    }
+}

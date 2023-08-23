@@ -8,7 +8,7 @@ function setBoxGrid(items, duration){
         let row = Math.floor(idx / step);
         let column = idx % step;
         x.style.width = `${width}px`;
-        gsap.fromTo(x, {opacity:0.5}, {x:column*width, y:row*350, opacity:1, duration});
+        gsap.fromTo(x, {opacity:1}, {x:column*width, y:row*350, opacity:1, duration});
         //x.style.transform = `translate(${column*width}px, ${row*300}px)`
     })
 }
