@@ -49,3 +49,11 @@ img{
     object-fit:cover;
     vertical-align:baseline
 }
+
+select{
+	border:none;
+	-webkit-apperance:none;
+	appearance:none;
+	font:inherit;
+	outline:none
+}

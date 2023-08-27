@@ -26,6 +26,10 @@
         </dd>
     </dl>
     <dl>
+        <dt>My role:</dt>
+        <dd>{ detailItem.role }</dd>
+    </dl>
+    <dl>
         <dt>Device:</dt>
         <dd>{ detailItem.device }</dd>
     </dl>

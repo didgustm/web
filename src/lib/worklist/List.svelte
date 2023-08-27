@@ -5,7 +5,7 @@
 </script>
 
 <div class="list">
-    { #each sites as site }
-    <Box { site } { items } { detailShow } />
+    { #each sites as site, idx }
+    <Box { site } { idx } { items } { detailShow } />
     { /each }
 </div>

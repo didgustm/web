@@ -2,13 +2,13 @@
     import { boxMouseOver } from "@js/boxMouseOver"
     import Card from "./Card.svelte"
 
-    export let site, items, detailShow
+    export let site, idx, items, detailShow
 </script>
 
 <div 
-    class="box {`box${site.id}`}"
+    class="box {`box${idx+1}`}"
     data-sort="{site.category}"
-    bind:this={items[site.id - 1]}
+    bind:this={items[idx]}
     on:mouseenter={ e => boxMouseOver(e, 'enter') } 
     on:mouseleave={ e => boxMouseOver(e, 'leave') }
 >
@@ -16,7 +16,9 @@
         type="button"
         on:click={detailShow(site)}
     >
-        <div class="thumnail"></div>
+        <div class="thumnail">
+            <img src="{ site.cover }" alt="">
+        </div>
         <Card { site } />
     </button>
 </div>

@@ -4,7 +4,6 @@
     import { sites } from "@js/worklist"
     import { setLayout } from "@js/setLayout"
     import { setBoxGrid } from "@js/setBoxGrid"
-    import Visual from "./lib/visual/Visual.svelte"
     import Worklist from "./lib/worklist/Worklist.svelte"
     import Detail from "./lib/detail/Detail.svelte";
 
@@ -24,9 +23,8 @@
         setBoxGrid(items, 0)
     }
 
-    function sortBox(i){
-        if(sort != i){
-            sort = i;
+    function sortBox(sort){
+        if(sort != 0){
             newItems = items;
             beforeItems = items.filter(ele => ele.dataset.sort == sort);
             afterItems = items.filter(ele => ele.dataset.sort != sort);
@@ -54,8 +52,7 @@
     on:resize={layout}
 />
 <main>
-    <Visual />
-    <Worklist { Saos } { sites } { items } { sortBox } { detailShow } />
+    <Worklist { Saos } { sites } { items } { sort } { sortBox } { detailShow } />
 </main>
 { #if visible }
 <Detail { detailItem } { detailHide } />
