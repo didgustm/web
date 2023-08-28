@@ -19,17 +19,21 @@
     requestAnimationFrame(raf);
 
     function layout(){
-        setLayout();
+        setLayout(items);
         setBoxGrid(items, 0)
     }
 
     function sortBox(sort){
         if(sort != 0){
-            newItems = items;
+            // newItems = items;
             beforeItems = items.filter(ele => ele.dataset.sort == sort);
             afterItems = items.filter(ele => ele.dataset.sort != sort);
-            newItems = beforeItems.concat(afterItems);
-            setBoxGrid(newItems, 0.4)
+            //newItems = beforeItems.concat(afterItems);
+            setBoxGrid(beforeItems, afterItems, 0.5);
+            setLayout(beforeItems);
+        } else{
+            setBoxGrid(items, '', 0.5);
+            setLayout(items)
         }
     }
 

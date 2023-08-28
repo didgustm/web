@@ -34,6 +34,18 @@ main{
     }
 }
 
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+  
 // delay
 // @for $i from 1 through 20{
 //     *[class*=--#{$i}]{

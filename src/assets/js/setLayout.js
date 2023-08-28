@@ -1,6 +1,6 @@
-function setLayout(){
+function setLayout(items){
     const list = document.querySelector('.list'),
-                leng = list.childElementCount,
+                leng = items.length,
                 w = list.clientWidth,
                 step = Math.floor(w / 350);
                 

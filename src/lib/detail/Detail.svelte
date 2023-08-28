@@ -1,6 +1,7 @@
 <script>
     import "@scss/detail/style.scss"
     import Top from "./Top.svelte"
+    import Img from "./Img.svelte";
     import Info from "./Info.svelte"
     import { fly } from "svelte/transition"
 
@@ -14,7 +15,7 @@
     out:fly={{ y:window.innerHeight, opacity:1, duration:700 }}
 >
     <div class="inner">
-        <div class="img"><img src="" alt=""></div>
+        <Img { detailItem } />
         <div class="txt">
             <div class="contents">
                 <Top { detailItem } { detailHide } />

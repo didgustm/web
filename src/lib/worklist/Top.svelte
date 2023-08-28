@@ -1,7 +1,7 @@
 <script>
     export let Saos, sort, sortBox
 
-    const menuList = ["Sort", "Life", "Car", "Stock", "IT/WEB", "Etc"]
+    const menuList = ["All", "Life", "Car", "Stock", "IT/WEB", "Etc"]
 </script>
 
 <div class="top">
@@ -35,7 +35,7 @@
         >
             { #each menuList as menu, idx }
                 { #if idx == 0 }
-                <option value="{ 0 }" selected disabled>{ menu }</option>
+                <option value="{ 0 }" selected>{ menu }</option>
                 { :else }
                 <option value="{ idx }">{ menu }</option>
                 { /if }

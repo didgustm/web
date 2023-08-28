@@ -7,6 +7,7 @@
  */
 
 import { images } from "./img_list"
+import { views } from "./img_view"
 
 const sites = [
     {
@@ -23,7 +24,8 @@ const sites = [
         url: "https://leaderscpa.com/merchant/alevel/",
         role: "100%",
         device: "PC, Mobile",
-        cover: images.alevel
+        cover: images.alevel,
+        view: views.alevel
     },
     {
         title: "깨GO빼GO",
@@ -39,7 +41,8 @@ const sites = [
         url: "https://www.corevac.com/",
         role: "100%",
         device: "PC only",
-        cover: images.corevac
+        cover: images.corevac,
+        view: views.corevac
     },
     {
         title: "리더스오토솔루션",
@@ -47,7 +50,8 @@ const sites = [
         url: "http://auto.carfly.me/",
         role: "70%",
         device: "PC, Mobile",
-        cover: images.las
+        cover: images.las,
+        view: views.las
     },
     {
         title: "LAS-골드클래스",
@@ -55,7 +59,8 @@ const sites = [
         url: "http://gold.carfly.me/",
         role: "60%",
         device: "PC, Mobile",
-        cover: images.goldclass
+        cover: images.goldclass,
+        view: views.goldclass
     },
     {
         title: "Calendar",
@@ -63,7 +68,8 @@ const sites = [
         url: "https://didgustm.github.io/calendar/",
         role: "100%",
         device: "PC only",
-        cover: images.calendar
+        cover: images.calendar,
+        view: views.calendar
     },
     {
         title: "TODO List",
@@ -71,7 +77,8 @@ const sites = [
         url: "https://didgustm.github.io/todo_svelte/",
         role: "100%",
         device: "PC only",
-        cover: images.todo
+        cover: images.todo,
+        view: views.todo
     },
     {
         title: "8282에어크린",
@@ -79,7 +86,8 @@ const sites = [
         url: "https://8282airclean.com/",
         role: "100%",
         device: "PC, Mobile",
-        cover: images.airclean
+        cover: images.airclean,
+        view: views.airclean
     },
     {
         title: "패스트헌터",
@@ -103,7 +111,8 @@ const sites = [
         url: "https://leaderscpa.com/merchant/isabang/",
         role: "100%",
         device: "PC, Mobile",
-        cover: images.isabang
+        cover: images.isabang,
+        view: views.isabang
     },
     {
         title: "스테이크",
@@ -111,7 +120,8 @@ const sites = [
         url: "https://stake-in.com/",
         role: "100%",
         device: "PC, Mobile",
-        cover: images.stake
+        cover: images.stake,
+        view: views.stake
     },
     {
         title: "로또플라이",
@@ -119,7 +129,8 @@ const sites = [
         url: "https://lottofly.co.kr/m/",
         role: "100%",
         device: "Mobile only",
-        cover: images.lotto
+        cover: images.lotto,
+        view: views.lotto
     },
     {
         title: "퍼블링",
@@ -127,7 +138,8 @@ const sites = [
         url: "https://publing.co.kr/",
         role: "100%",
         device: "PC, Mobile",
-        cover: images.publing
+        cover: images.publing,
+        view: views.publing
     },
     {
         title: "리더스CPA",
@@ -135,7 +147,8 @@ const sites = [
         url: "https://leaderscpa.com/",
         role: "80%",
         device: "PC, Mobile",
-        cover: images.cpa
+        cover: images.cpa,
+        view: views.cpa
     },
     {
         title: "마케팅플라이",
@@ -143,7 +156,8 @@ const sites = [
         url: "https://mkfly.co.kr/",
         role: "70%",
         device: "PC, Mobile",
-        cover: images.mkfly
+        cover: images.mkfly,
+        view: views.mkfly
     },
     {
         title: "마플-인플루언서",
@@ -151,7 +165,8 @@ const sites = [
         url: "https://mkfly.co.kr/influencer",
         role: "100%",
         device: "PC, Mobile",
-        cover: images.mkinflu
+        cover: images.mkinflu,
+        view: views.mkinflu
     },
     // {
     //     title: "한국재무컨설팅센터",
@@ -166,7 +181,8 @@ const sites = [
         url: "https://leaderscpa.com/merchant/jejuchanga/",
         role: "100%",
         device: "PC, Mobile",
-        cover: images.jeju
+        cover: images.jeju,
+        view: views.jejuchanga
     },
     // {
     //     title: "청개구리주식스쿨",
@@ -202,7 +218,8 @@ const sites = [
         url: "https://leaderscpa.com/merchant/allfly/",
         role: "100%",
         device: "PC, Mobile",
-        cover: images.allfly
+        cover: images.allfly,
+        view: views.allfly
     },
     // {
     //     title: "청개구리투자클럽",
@@ -225,7 +242,8 @@ const sites = [
         url: "https://leaderscpa.com/merchant/isearch/",
         role: "100%",
         device: "PC, Mobile",
-        cover: images.isearch
+        cover: images.isearch,
+        view: views.isearch
     }
 ]
 
