@@ -10,29 +10,12 @@
         @include vars.flex(space-between, stretch);
         max-width:1400px;
         padding:40px 20px;
-        margin:0 auto
-    }
-
-    .top{
-        @include vars.flex(space-between)
-    }
-    .title{
-        @include vars.flex(center, center);
-        max-width:calc(100% - 50px);
-        word-break:break-all;
-        @include vars.fontWeight(600);
-        font-size:28px
-    }
-    .utils{
-        @include vars.flex(center, center);
-        img{
-            pointer-events:none
+        margin:0 auto;
+        @include vars.custom(1000px){
+            padding-top:9.375rem
         }
-        .link{
-            width:40px
-        }
-        .close{
-            width:28px
+        @include vars.custom(875px){
+            display:block;
         }
     }
 
@@ -42,61 +25,13 @@
         img{
             width:auto
         }
+        @include vars.custom(875px){
+            width:100%
+        }
     }
 
-    .txt{
-        position:relative;
-        width:27%
-    }
-
-    .contents{
-        position:sticky;
-        top:40px;
-        right:0;
-        .info{
-            padding-top:50px
-        }
-        dl{
-            @include vars.flex(flex-start, center);
-            margin-top:15px;
-            line-height:1.4
-        }
-        dt{
-            width:40%;
-            font-size:20px
-        }
-        dd{
-            @include vars.ellipsis(60%);
-            font-size:14px;
-            color:#878787;
-            padding-left:20px;
-            a{
-                text-decoration:underline;
-                line-height:1.3
-            }
-        }
-    }
-    .loading{
-        position:absolute;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        background:#fff;
-        z-index:2
-    }
-    .loading svg{
-        stroke-dasharray:140px;
-        stroke:#cdcdcd;
-    }
-    .loading svg{
-        animation:load_circle 2s ease infinite
-    }
-    @keyframes load_circle{
-        55%{stroke-dashoffset:-130px}
-        100%{transform:rotate(2turn); stroke-dashoffset:0}
-    }
+    @import "./top";
+    @import "./text";
+    @import "./loading";
+    
 }

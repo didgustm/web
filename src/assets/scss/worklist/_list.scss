@@ -21,4 +21,21 @@
     
     @import "./card.scss";
     
+    @include vars.custom(700px){
+        margin:5rem auto;
+        .box{
+            height:25rem;
+            padding:2rem
+        }
+    }
+    @include vars.custom(560px){
+        .box{
+            padding:2rem
+        }
+    }
+    @include vars.custom(500px){
+        .box{
+            height:calc(100vw - 40px)
+        }
+    }
 }

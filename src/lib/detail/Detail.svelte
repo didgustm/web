@@ -5,7 +5,7 @@
     import Info from "./Info.svelte"
     import { fly } from "svelte/transition"
 
-    export let detailItem, detailHide
+    export let detailItem, detailHide, deviceWidth
 </script>
 
 <div 
@@ -18,7 +18,7 @@
         <Img { detailItem } />
         <div class="txt">
             <div class="contents">
-                <Top { detailItem } { detailHide } />
+                <Top { detailItem } { detailHide } { deviceWidth } />
                 <Info { detailItem } />
             </div>
         </div>

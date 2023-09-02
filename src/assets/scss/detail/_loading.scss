@@ -1,0 +1,23 @@
+.loading{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff;
+    z-index:2
+}
+.loading svg{
+    stroke-dasharray:140px;
+    stroke:#cdcdcd;
+}
+.loading svg{
+    animation:load_circle 2s ease infinite
+}
+@keyframes load_circle{
+    55%{stroke-dashoffset:-130px}
+    100%{transform:rotate(2turn); stroke-dashoffset:0}
+}

@@ -1,0 +1,69 @@
+.txt{
+    position:relative;
+    width:27%;
+    @include vars.custom(875px){
+        width:100%
+    }
+}
+
+.contents{
+    position:sticky;
+    top:40px;
+    right:0;
+    .info{
+        padding-top:50px
+    }
+    dl{
+        @include vars.flex(flex-start, center);
+        margin-top:15px;
+        line-height:1.4
+    }
+    dt{
+        width:40%;
+        font-size:20px
+    }
+    dd{
+        @include vars.ellipsis(60%);
+        font-size:14px;
+        color:#878787;
+        padding-left:20px;
+        a{
+            text-decoration:underline;
+            line-height:1.3
+        }
+    }
+    
+    @include vars.custom(1000px){
+        top:7.5rem;
+        .info{
+            padding-top:0
+        }
+    }
+    @include vars.custom(875px){
+        position:static;
+        padding-top:3.125rem;
+    }
+    @include vars.custom(700px){
+        dl{
+            margin-top:1.5rem
+        }
+        dt{
+            font-size:2rem
+        }
+        dd{
+            font-size:1.4rem;
+            padding-left:0
+        }
+    }
+    @include vars.custom(375px){
+        dl{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        dd{
+            margin-left:0;
+            text-align:right;
+            line-height:1.4
+        }
+    }
+}

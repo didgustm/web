@@ -59,7 +59,7 @@
     <Worklist { Saos } { sites } { items } { sort } { sortBox } { detailShow } />
 </main>
 { #if visible }
-<Detail { detailItem } { detailHide } />
+<Detail { detailItem } { detailHide } { deviceWidth } />
 { /if }
 
 <style>

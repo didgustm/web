@@ -45,6 +45,30 @@ main{
 .lenis.lenis-stopped {
     overflow: hidden;
 }
+
+@include vars.custom(700px){
+    html{
+        font-size:10px
+    }
+    body{
+        font-size:1.6rem
+    }
+}
+@include vars.custom(470px){
+    html{
+        font-size:9px
+    }
+}
+@include vars.custom(375px){
+    html{
+        font-size:8px
+    }
+}
+@include vars.custom(400px){
+    html{
+        font-size:7px
+    }
+}
   
 // delay
 // @for $i from 1 through 20{

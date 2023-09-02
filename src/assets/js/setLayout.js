@@ -2,9 +2,10 @@ function setLayout(items){
     const list = document.querySelector('.list'),
                 leng = items.length,
                 w = list.clientWidth,
-                step = Math.floor(w / 350);
+                h = w <= 500? w-40: w < 700? 250: 350,
+                step = Math.floor(w / h);
                 
-    list.style.height = `${Math.ceil(leng / step) * 350}px`;
+    list.style.height = `${Math.ceil(leng / step) * h}px`;
 }
 
 export { setLayout }
