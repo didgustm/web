@@ -56,7 +56,7 @@
     on:resize={layout}
 />
 <main>
-    <Worklist { Saos } { sites } { items } { sort } { sortBox } { detailShow } />
+    <Worklist { Saos } { sites } { items } { sort } { sortBox } { detailShow } { deviceWidth } />
 </main>
 { #if visible }
 <Detail { detailItem } { detailHide } { deviceWidth } />

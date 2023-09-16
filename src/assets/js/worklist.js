@@ -16,7 +16,8 @@ const sites = [
         url: "http://classeum.leaderscpa.com/",
         role: "50%",
         device: "PC, Mobile",
-        cover: images.classeum
+        cover: images.classeum,
+        view: views.classeum
     },
     {
         title: "에이레벨랩스",
@@ -33,7 +34,8 @@ const sites = [
         url: "http://slimcare.playup.kr/",
         role: "70%",
         device: "PC, Mobile",
-        cover: images.slimcare
+        cover: images.slimcare,
+        view: views.slimcare
     },
     {
         title: "코어백",
@@ -95,7 +97,8 @@ const sites = [
         url: "http://fasthunter.co.kr/",
         role: "50%",
         device: "Mobile only",
-        cover: images.fasthunter
+        cover: images.fasthunter,
+        view: views.fasthunter
     },
     {
         title: "패스트헌터-Dealer",
@@ -103,7 +106,8 @@ const sites = [
         url: "https://fasthunter.co.kr/dealer/signin/",
         role: "100%",
         device: "Mobile only",
-        cover: images.fastDealer
+        cover: images.fastDealer,
+        view: views.fastdealer
     },
     {
         title: "이사방",

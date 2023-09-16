@@ -1,10 +1,10 @@
 .card{
     @include vars.flex(center, center);
     position:absolute;
-    top:15px;
-    right:15px;
-    bottom:15px;
-    left:15px;
+    top:25px;
+    right:25px;
+    bottom:25px;
+    left:25px;
     border-radius:10px;
     color:#fff;
     background:rgba(0,0,0,.7);
@@ -25,4 +25,24 @@
     right:20px;
     bottom:25px;
     filter:brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(165deg) brightness(103%) contrast(101%)
+}
+
+@include vars.custom(1065px){
+    .card{
+        justify-content:space-between;
+        align-items:flex-end;
+        top:auto;
+        padding:2rem 2rem 1rem;
+        background:linear-gradient(0deg, rgba(0,0,0,.9), transparent);
+        transform:translate(0);
+    }
+    .info{
+        text-align:left
+    }
+    .category{
+        margin:0 0 1rem
+    }
+    .icon{
+        position:static
+    }
 }

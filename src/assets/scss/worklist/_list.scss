@@ -5,18 +5,18 @@
     .box{
         position:absolute;
         height:350px;
-        padding:25px
     }
     button{
         position:relative;
         @include vars.wide();
-        background:#7d7d7d;
-        border-radius:10px;
-        overflow:hidden;
-        box-shadow:5px 5px 8px rgba(0,0,0,.23)
+        padding:25px;
+        overflow:hidden
     }
     .thumnail{
-        @include vars.wide()
+        @include vars.wide();
+        border-radius:10px;
+        box-shadow:5px 5px 8px rgba(0,0,0,.23);
+        overflow:hidden
     }
     
     @import "./card.scss";

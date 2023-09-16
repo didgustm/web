@@ -15,6 +15,10 @@ import allfly from "@images/view/allfly_view.webp"
 import isearch from "@images/view/isearch_view.webp"
 import calendar from "@images/view/calendar_view.webp"
 import todo from "@images/view/todo_view.webp"
+import classeum from "@images/view/classeum_view.webp"
+import slimcare from "@images/view/slimcare_view.webp"
+import fasthunter from "@images/view/fasthunter_view.webp"
+import fastdealer from "@images/view/fastdealer_view.webp"
 
 const views = {
     airclean,
@@ -33,7 +37,11 @@ const views = {
     allfly,
     isearch,
     calendar,
-    todo
+    todo,
+    classeum,
+    slimcare,
+    fasthunter,
+    fastdealer
 }
 
 export { views }

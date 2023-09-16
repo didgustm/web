@@ -45,4 +45,34 @@
             font-size:1.8rem
         }
     }
+    @include vars.custom(500px){
+        .title{
+            font-size:5rem
+        }
+        .caption{
+            font-size:1.6rem
+        }
+        select{
+            font-size:1.6rem
+        }
+    }
+    @include vars.custom(400px){
+        .txt{
+            width:100%
+        }
+        .title{
+            font-size:6rem
+        }
+        .caption{
+            font-size:1.8rem
+        }
+        .select{
+            width:100%;
+            margin-top:3rem;
+            text-align:right
+        }
+        select{
+            font-size:1.8rem
+        }
+    }
 }
